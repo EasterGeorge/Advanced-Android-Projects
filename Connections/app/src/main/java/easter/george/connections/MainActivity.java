@@ -90,12 +90,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Setup the ActionBar and the Spinner in the ActionBar
-        getActionBar().setDisplayShowTitleEnabled(true);
-        getActionBar().setSubtitle("Practical Android");
-        getActionBar().setTitle("Connections");
-
         setContentView(R.layout.activity_main);
 
         pingType.clear();
