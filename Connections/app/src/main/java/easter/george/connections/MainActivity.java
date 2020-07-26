@@ -42,9 +42,6 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView img;
-
-    private static int 		timeoutConnection = 5000;
-    private static int 		timeoutSocket = 	5000;
     private static Integer	timeoutReachable =	5000;
     private static Integer	updateInterval =	10000;
 
@@ -421,7 +418,8 @@ public class MainActivity extends AppCompatActivity {
 
     BroadcastReceiver wifiStatusReceiver = new BroadcastReceiver() {
         @Override
-        public void onReceive(Context context, Intent intent) {
+        public void onReceive(Context context, Intent intent)
+        {
             TextView textBR = (TextView) findViewById(R.id.textBroadcastReceiver);
             SupplicantState supState;
             WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
@@ -431,11 +429,13 @@ public class MainActivity extends AppCompatActivity {
                 // wifi is connected
                 textBR.setText(getString(R.string.connected));
                 textBR.setTextColor(Color.parseColor(textColor[0]));  // green
-            } else if (supState.equals(SupplicantState.SCANNING)) {
+            }
+            else if (supState.equals(SupplicantState.SCANNING)) {
                 // no wifi so give an update
                 textBR.setText(getString(R.string.scanning));
                 textBR.setTextColor(Color.parseColor(textColor[1]));  // red
-            } else if (supState.equals(SupplicantState.DISCONNECTED)) {
+            }
+            else if (supState.equals(SupplicantState.DISCONNECTED)) {
                 // wifi not connected
                 textBR.setText(getString(R.string.notconnected));
                 textBR.setTextColor(Color.parseColor(textColor[1]));  // red

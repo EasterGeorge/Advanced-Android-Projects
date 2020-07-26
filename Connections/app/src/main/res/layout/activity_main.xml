@@ -21,7 +21,7 @@
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="Update Status"></TextView>
+            android:text="Update Status" />
         <ImageView
             android:background="@drawable/bar_dark"
             android:layout_width="fill_parent"
@@ -33,12 +33,13 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Time:"
-                android:textSize="14dp"></TextView>
+                android:textSize="14dp" />
             <TextView
                 android:id="@+id/textTime"
                 android:visibility="visible"
@@ -57,12 +58,13 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Last Refresh:"
-                android:textSize="14dp"></TextView>
+                android:textSize="14dp" />
             <TextView
                 android:id="@+id/textUpdate"
                 android:visibility="visible"
@@ -83,7 +85,7 @@
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="Connection Status"></TextView>
+            android:text="Connection Status" />
         <ImageView
             android:background="@drawable/bar_dark"
             android:layout_width="fill_parent"
@@ -193,12 +195,13 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Wifi Broadcast Receiver: "
-                android:textSize="14dp"></TextView>
+                android:textSize="14dp" />
             <TextView
                 android:id="@+id/textBroadcastReceiver"
                 android:visibility="visible"
@@ -219,7 +222,7 @@
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            android:text="Reachability"></TextView>
+            android:text="Reachability" />
         <ImageView
             android:background="@drawable/bar_dark"
             android:layout_width="fill_parent"
